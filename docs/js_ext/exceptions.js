@@ -6,7 +6,7 @@ let endDate;
 module.exports = {
 	init: _=>{
 		getElementById("back-button-footer").href = 
-		getElementById("back-button").href = "./index.html"+location.search;
+		getElementById("back-button").href = "./index.html";
 	},
 	load: _=>{
 		initDate = toDate(PARAMS.ini);
@@ -143,11 +143,5 @@ function save(){
 
 	PARAMS.exceptions = dows;
 
-	let backButtonFooter = getElementById("back-button-footer");
-	let newUrl = backButtonFooter.href.replace(/\?.*$/,'?d='+encData(PARAMS));
-	getElementById("back-button").href = backButtonFooter.href = newUrl;
-
-	try {
-		window.history.pushState("", "", newUrl);
-	} catch (e) {}
+	localStorage.setItem("d", encData(PARAMS))
 }

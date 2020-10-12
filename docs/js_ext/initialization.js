@@ -3,7 +3,7 @@ const TARGETES = require('./targetes.js');
 
 module.exports = {
 	init: _=>{
-		getElementById("form-submit").onsubmit = ev=>ev.target.d.value = encData(loadOutputData());
+		getElementById("form-submit").onsubmit = ev=>localStorage.setItem("d", encData(loadOutputData()));
 		getElementById("uni").onchange = onChangeUni;
 		getElementById("reset-fields").onclick = resetFields;
 	},
@@ -111,7 +111,9 @@ function onChangeUni(ev){
 }
 
 function resetFields(ev) {
-	location.search = "";
+	localStorage.setItem("d", "e301");
+	localStorage.clear();
+	location.reload();
 	return false;
 }
 

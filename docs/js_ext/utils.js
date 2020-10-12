@@ -27,13 +27,14 @@ const PARAMS = (function(data){
 		while (lastChar --> 0) {
 			data += "=";
 		}
-
+		
 		return JSON.parse(atob(data));
 	} else {
 		return {};
 	}
 
-})(GET_PARAMS['d']);
+//})(GET_PARAMS['d']);
+})(localStorage.getItem('d'));
 
 function fromDate(date, short) {
 	let month = date.getMonth()+1;
