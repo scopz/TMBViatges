@@ -8,19 +8,19 @@
 <body>
 	<header>
 		<img id="logo" src="./img/Logo-TMB.png"/>
-		<a id="back-button" href="./index.html">Tornar</a>
 	</header>
-	<h1 id="modern-browser-message">Aquesta eina només funciona en navegadors moderns i actualitzats</h1>
 
 	<div id="content" style="display:none">
+		<div class="tornar-btn-container">
+			<button class="save-button">Gravar dades i tornar</button>
+		</div>
+
 		<div id="mesos"></div>
 		
-		<div id="gravar-excepcions">
-			<a id="back-button-footer" href="./index.html">Tornar</a>
+		<div class="tornar-btn-container">
+			<button class="save-button">Gravar dades i tornar</button>
 		</div>
 	</div>
-
-
 
 
 	<template id="month" style="display:none">
@@ -31,7 +31,6 @@
 		<tbody class="dies"></tbody>
 		</table>
 	</template>
-
 
 	<template id="week" style="display:none">
 		<tr>

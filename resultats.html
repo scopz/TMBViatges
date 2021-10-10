@@ -4,17 +4,26 @@
 	<meta charset="utf-8"/>
 	<title>TMBViatges</title>
 	<link rel="shortcut icon" href="./img/favicon.png"/>
-	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
 </head>
 <body>
 	<header>
 		<img id="logo" src="./img/Logo-TMB.png"/>
-		<a id="back-button" href="./index.html">Tornar</a>
 	</header>
-	<h1 id="modern-browser-message">Aquesta eina només funciona en navegadors moderns i actualitzats</h1>
 
-	<div id="content" style="display:none"></div>
+	<div id="error-message" style='display:none'></div>
 
+	<div id="content" style="display:none">
+		<div class="tornar-btn-container">
+			<button class="back-button">Tornar</button>
+		</div>
+
+		<div id="preus"></div>
+
+		<div class="tornar-btn-container">
+			<button class="back-button">Tornar</button>
+		</div>
+		
+	</div>
 
 	<template id="result-template" style="display:none">
 		<div class="result">
