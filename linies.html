@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
+	<title>TMBViatges</title>
+	<link rel="shortcut icon" href="./img/favicon.png"/>
+</head>
+<body>
+	<header>
+		<img id="logo" src="./img/Logo-TMB.png"/>
+	</header>
+
+	<form action="./linies-filter.html" method="GET">
+		<table  style="margin: auto;">
+			<tr>
+				<td>Origen</td>
+				<td><select id="origin-select" name="i"></select></td>
+			</tr>
+			<tr>
+				<td>Destí</td>
+				<td><select id="destination-select" name="f"></select></td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;">
+					<button>Cercar</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+
+	<div id="content" style="display:none">
+		<div id="all-lines">
+		
+		</div>
+	</div>
+
+	<script type="text/javascript" src="./js/bundle-linies.js"></script>
+
+	<footer>Aplicació no oficial de TMB</footer>
+</body>
+</html>

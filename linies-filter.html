@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
+	<title>TMBViatges</title>
+	<link rel="shortcut icon" href="./img/favicon.png"/>
+</head>
+<body>
+	<header>
+		<img id="logo" src="./img/Logo-TMB.png"/>
+	</header>
+
+	<div id="content" style="display:none">
+		<div id="menu">
+
+			<div id="stats">
+				<button id="prevPage">&lt;</button>
+				<span id="num">0</span>/<span id="total">0</span>
+				<button id="nextPage">&gt;</button>				<button id="invert">Invertir</button>
+
+				<div><b>Distancia total</b>: <span id="distance">0</span>km</div>
+				<div><b>Parades</b>: <span id="stops">0</span></div>
+
+				<select id="transshipments" style="display: none">
+					<option value="-1">Qualsevol transbord</option>
+				</select>
+			</div>
+		</div>
+
+		<div id="alternative"></div>
+	</div>
+
+	<script type="text/javascript" src="./js/bundle-linies.js"></script>
+
+	<footer>Aplicació no oficial de TMB</footer>
+</body>
+</html>
