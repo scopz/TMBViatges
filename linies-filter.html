@@ -17,17 +17,19 @@
 	<div id="content" style="display:none">
 		<div id="menu">
 
-			<div id="stats">
+			<div id="header">
+				<div id="journey"><span id="origin"></span><span id="arrow">&#x21E2;</span><span id="destination"></span></div>
+
 				<button id="prevPage">&lt;</button>
 				<span id="num">0</span>/<span id="total">0</span>
-				<button id="nextPage">&gt;</button>				<button id="invert">Invertir</button>
+				<button id="nextPage">&gt;</button>
+				<button id="change-view"></button>
 
-				<div><b>Distancia total</b>: <span id="distance">0</span>km</div>
-				<div><b>Parades</b>: <span id="stops">0</span></div>
-
-				<select id="transshipments" style="display: none">
-					<option value="-1">Qualsevol transbord</option>
-				</select>
+				<table id="stats">
+					<tr><td>Distància total:</td><td><span id="distance">0</span>km</td></tr>
+					<tr><td>Parades:</td><td><span id="stops">0</span></td></tr>
+					<tr><td>Transbords:</td><td><span id="trans">0</span></td></tr>
+				</table>
 			</div>
 		</div>
 
